@@ -32,16 +32,16 @@ startGame.addEventListener("click", () => {
     dumbbell.style.display = "block";
     brownie.style.display = "block";
     step = 1;
-    showNote();
+    showNote(); // show first note automatically
 });
 
-// Show clue popup
+// Show note popup
 function showNote() {
     noteText.textContent = notes[step-1];
     note.style.display = "block";
 }
 
-// Continue
+// Continue button
 noteContinue.addEventListener("click", () => {
     note.style.display = "none";
     if (step === 6) {
