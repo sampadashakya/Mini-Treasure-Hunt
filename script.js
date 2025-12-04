@@ -28,11 +28,14 @@ let confettiParticles = [];
 startGame.addEventListener("click", () => {
     startGame.style.display = "none";
     background.style.display = "block";
+
+    // SHOW OBJECTS IMMEDIATELY
     yogaMat.style.display = "block";
     dumbbell.style.display = "block";
     brownie.style.display = "block";
+
     step = 1;
-    showNote(); // show first note automatically
+    showNote(); // notes appear automatically
 });
 
 // Show note popup
