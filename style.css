@@ -48,8 +48,8 @@ body, html {
 #brownie {
     width: 13%;
     height: auto;
-    left: 6%;      /* 3 cm right of previous */
-    top: 53%;       
+    left: 5%;      /* 3 cm right of previous */
+    top: 55%;       
 }
 
 /* Notes */
@@ -123,6 +123,7 @@ body, html {
     pointer-events: none;
     display: none;
 }
+
 
 
 
