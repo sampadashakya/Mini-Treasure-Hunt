@@ -17,7 +17,6 @@ const startGame = document.getElementById("startGame");
 const note = document.getElementById("note");
 const noteText = document.getElementById("noteText");
 const noteContinue = document.getElementById("noteContinue");
-const noteButton = document.getElementById("noteButton");
 
 const badge = document.getElementById("badge");
 const playAgain = document.getElementById("playAgain");
@@ -32,7 +31,6 @@ startGame.addEventListener("click", () => {
     yogaMat.style.display = "block";
     dumbbell.style.display = "block";
     brownie.style.display = "block";
-    noteButton.style.display = "block";
     step = 1;
     showNote();
 });
@@ -41,13 +39,11 @@ startGame.addEventListener("click", () => {
 function showNote() {
     noteText.textContent = notes[step-1];
     note.style.display = "block";
-    background.style.filter = "blur(5px)";
 }
 
 // Continue
 noteContinue.addEventListener("click", () => {
     note.style.display = "none";
-    background.style.filter = "none";
     if (step === 6) {
         showBadge();
     } else if (step < 3) {
