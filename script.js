@@ -5,7 +5,7 @@ const notes = [
     "So how do we play this game?\nWell, you will be given clues turn by turn, and you will have to find the object based on the clue.",
     "Clue #1\nRemember our very first chat?\nIt all started while we were stretching…\nFind the thing that reminds us of that first moment together.",
     "Congratulations! You found it!\n\nClue #2\nIt’s strong, determined, and loves the gym as much as you do.\nPick the thing that reminds me how proud I am of you.",
-    "Wow, look at you go!\n\nClue #3\nFind something sweet…\nSweet like you…\nAND sweet like the treats we shared on our first date."
+    "Wow, look at you go!\n\nClue #3\nFind something sweet…\nSweet like you…\nand sweet like the treats we shared on our first date."
 ];
 
 const background = document.getElementById("background");
@@ -132,3 +132,4 @@ function animateConfetti(){
     });
     requestAnimationFrame(animateConfetti);
 }
+
