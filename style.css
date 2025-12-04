@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive;
+    display: flex;
+    justify-content: center;
+    background: #fff0f5; /* cute background color */
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    max-width: 440px; /* half of original 880px */
+    aspect-ratio: 880 / 1173; /* maintains background ratio */
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+#background {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.game-object {
+    position: absolute;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+/* scale objects using percentage positions */
+#yoga-mat {
+    width: calc(75 / 880 * 100%);
+    height: calc(200 / 1173 * 100%);
+    left: calc(750 / 880 * 100%);
+    top: calc(760 / 1173 * 100%);
+}
+
+#dumbbell {
+    width: calc(35 / 880 * 100%);
+    height: calc(25 / 1173 * 100%);
+    left: calc(240 / 880 * 100%);
+    top: calc(475 / 1173 * 100%);
+}
+
+#brownie {
+    width: cal

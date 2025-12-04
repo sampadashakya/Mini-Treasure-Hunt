@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Treasure Hunt</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+    <div id="game-container">
+        <!-- Background -->
+        <img id="background" src="assets/background.png" alt="background">
+
+        <!-- Objects -->
+        <img id="yoga-mat" src="assets/mat.png" class="game-object" style="left: 750px; top: 760px; width: 75px; height: 200px;">
+        <img id="dumbbell" src="assets/db.png" class="game-object" style="left: 240px; top: 475px; width: 35px; height: 25px;">
+        <img id="brownie" src="assets/brownie.png" class="game-object" style="left: 130px; top: 710px; width: 70px; height: 40px;">
+
+        <!-- Note popup -->
+        <div id="note-popup">
+            <p id="note-text"></p>
+            <button id="continue-btn">Continue</button>
+        </div>
+
+        <!-- Start button -->
+        <button id="start-btn">Start</button>
+
+        <!-- Note icon -->
+        <button id="note-icon">📝</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
