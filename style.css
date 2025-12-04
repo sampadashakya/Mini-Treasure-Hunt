@@ -17,6 +17,7 @@ body, html {
     top: 0;
     left: 0;
     z-index: 0;
+    display: none; /* show on start */
 }
 
 /* Objects */
@@ -24,26 +25,28 @@ body, html {
     position: absolute;
     cursor: pointer;
     z-index: 1;
-    display: none; /* initially hidden */
+    display: none; /* appear on start */
 }
 
-/* Object positions and sizes */
+/* Yoga Mat */
 #yogaMat {
-    width: 15%;
-    height: auto;
-    left: 76.2%;
-    top: 55%;
+    width: 8%;
+    height: 14%;
+    left: 77%;
+    top: 54%;
 }
 
+/* Dumbbell */
 #dumbbell {
-    width: 7%;
+    width: 8%;
     height: auto;
     left: 19%;
     top: 50%;
 }
 
+/* Brownie */
 #brownie {
-    width: 12%;
+    width: 13%;
     height: auto;
     left: 13%;
     top: 57%;
@@ -120,5 +123,3 @@ body, html {
     pointer-events: none;
     display: none;
 }
-
-
