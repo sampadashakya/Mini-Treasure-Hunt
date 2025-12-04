@@ -24,29 +24,29 @@ body, html {
     position: absolute;
     cursor: pointer;
     z-index: 1;
-    display: none;
+    display: none; /* initially hidden */
 }
 
 /* Object positions and sizes */
 #yogaMat {
-    width: 8%; /* slightly smaller */
+    width: 8%;
     height: auto;
-    left: 76.2%; /* 1 inch right */
-    top: 55%; /* slightly up */
+    left: 76.2%;
+    top: 55%;
 }
 
 #dumbbell {
-    width: 7%; /* slightly bigger */
+    width: 7%;
     height: auto;
-    left: 18.5%; /* 1 cm right */
-    top: 52%; /* 4 inch up */
+    left: 18.5%;
+    top: 52%;
 }
 
 #brownie {
-    width: 12%; /* slightly bigger */
+    width: 12%;
     height: auto;
     left: 15%;
-    top: 59%; /* 3 cm up */
+    top: 59%;
 }
 
 /* Notes */
