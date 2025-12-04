@@ -32,8 +32,8 @@ body, html {
 #yogaMat {
     width: 10%;
     height: auto;
-    left: 77%;       /* same horizontal */
-    top: 60%;        /* slightly above between lamp and fireplace */
+    left: 77%;
+    top: 68%;       /* 1 inch down */
 }
 
 /* Dumbbell */
@@ -48,8 +48,8 @@ body, html {
 #brownie {
     width: 13%;
     height: auto;
-    left: 35%;       /* beside dumbbell */
-    top: 56%;        /* aligned with dumbbell vertically */
+    left: 0%;       /* beside dumbbell */
+    top: 56%;        /* aligned with dumbbell horizontally */
 }
 
 /* Notes */
@@ -123,6 +123,7 @@ body, html {
     pointer-events: none;
     display: none;
 }
+
 
 
 
