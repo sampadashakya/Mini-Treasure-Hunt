@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mini Treasure Hunt</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<img id="background" src="images/background.png" alt="Background">
+
+<img id="yogaMat" class="game-object" src="images/mat.png" alt="Yoga Mat">
+<img id="dumbbell" class="game-object" src="images/db.png" alt="Dumbbell">
+<img id="brownie" class="game-object" src="images/brownie.png" alt="Brownie">
+
+<div id="note" class="hidden">
+    <p id="noteText"></p>
+    <button id="noteContinue">Continue</button>
+</div>
+
+<button id="noteButton" class="hidden">📝 Note</button>
+<button id="startGame">Start Game</button>
+
+<div id="badge" class="hidden">
+    <h1>🏆 BEST BOYFRIEND AWARD 🏆</h1>
+    <button id="playAgain">Play Again</button>
+</div>
+
+<canvas id="confettiCanvas" class="hidden"></canvas>
+
+<script src="script.js"></script>
+</body>
+</html>
