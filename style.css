@@ -33,7 +33,7 @@ body, html {
     width: 10%;
     height: auto;
     left: 77%;
-    top: 68%;       /* 1 inch down */
+    top: 60%;       /* 1 inch above previous */
 }
 
 /* Dumbbell */
@@ -48,8 +48,8 @@ body, html {
 #brownie {
     width: 13%;
     height: auto;
-    left: 0%;       /* beside dumbbell */
-    top: 56%;        /* aligned with dumbbell horizontally */
+    left: 12%;      /* 3 cm right of previous */
+    top: 44%;       /* 2 cm up */
 }
 
 /* Notes */
@@ -123,6 +123,7 @@ body, html {
     pointer-events: none;
     display: none;
 }
+
 
 
 
