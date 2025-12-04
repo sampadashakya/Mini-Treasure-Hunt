@@ -24,16 +24,18 @@ const confettiCanvas = document.getElementById("confettiCanvas");
 const confettiCtx = confettiCanvas.getContext("2d");
 let confettiParticles = [];
 
+// Function to show objects from beginning
+function showObjects() {
+    yogaMat.style.display = "block";
+    dumbbell.style.display = "block";
+    brownie.style.display = "block";
+}
+
 // Start Game
 startGame.addEventListener("click", () => {
     startGame.style.display = "none";
     background.style.display = "block";
-
-    // SHOW OBJECTS IMMEDIATELY
-    yogaMat.style.display = "block";
-    dumbbell.style.display = "block";
-    brownie.style.display = "block";
-
+    showObjects(); // objects appear immediately
     step = 1;
     showNote(); // notes appear automatically
 });
@@ -78,16 +80,24 @@ function showBadge() {
 
 // Play again -> back to start screen
 playAgain.addEventListener("click", () => {
+    // Hide badge & confetti
     badge.style.display = "none";
     confettiCanvas.style.display = "none";
     confettiParticles = [];
 
-    // Reset game state
+    // Reset objects
+    yogaMat.style.display = "block";
+    dumbbell.style.display = "block";
+    brownie.style.display = "block";
+
+    // Reset step
     step = 0;
     note.style.display = "none";
+
+    // Show Start Game button
     startGame.style.display = "block";
 });
- 
+
 // Confetti
 function initConfetti() {
     confettiParticles = [];
