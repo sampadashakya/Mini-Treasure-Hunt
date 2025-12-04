@@ -3,14 +3,14 @@ body {
     font-family: 'Comic Sans MS', cursive;
     display: flex;
     justify-content: center;
-    background: #fff0f5; /* cute background color */
+    background: #fff0f5;
 }
 
 #game-container {
     position: relative;
     width: 100%;
-    max-width: 440px; /* half of original 880px */
-    aspect-ratio: 880 / 1173; /* maintains background ratio */
+    max-width: 440px; /* scales for mobile */
+    aspect-ratio: 880 / 1173;
     overflow: hidden;
     margin-top: 20px;
 }
@@ -27,20 +27,73 @@ body {
     transition: transform 0.2s;
 }
 
-/* scale objects using percentage positions */
 #yoga-mat {
-    width: calc(75 / 880 * 100%);
-    height: calc(200 / 1173 * 100%);
-    left: calc(750 / 880 * 100%);
-    top: calc(760 / 1173 * 100%);
+    width: 8.5%;
+    height: 17%;
+    left: 85%;
+    top: 65%;
 }
 
 #dumbbell {
-    width: calc(35 / 880 * 100%);
-    height: calc(25 / 1173 * 100%);
-    left: calc(240 / 880 * 100%);
-    top: calc(475 / 1173 * 100%);
+    width: 4%;
+    height: 2%;
+    left: 27%;
+    top: 40%;
 }
 
 #brownie {
-    width: cal
+    width: 8%;
+    height: 3%;
+    left: 15%;
+    top: 60%;
+}
+
+#note-popup {
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 30%;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    padding: 15px;
+    display: none;
+    font-size: 4vw;
+    text-align: center;
+    z-index: 10;
+}
+
+#continue-btn {
+    margin-top: 15px;
+    padding: 8px 16px;
+    font-size: 4vw;
+    border-radius: 10px;
+    border: none;
+    background-color: #ffb6c1;
+    color: white;
+    cursor: pointer;
+}
+
+#start-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 6vw;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+}
+
+#note-icon {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 8vw;
+    cursor: pointer;
+    display: none;
+    background: none;
+    border: none;
+}
