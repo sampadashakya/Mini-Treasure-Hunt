@@ -76,15 +76,18 @@ function showBadge() {
     animateConfetti();
 }
 
-// Play again
+// Play again -> back to start screen
 playAgain.addEventListener("click", () => {
     badge.style.display = "none";
     confettiCanvas.style.display = "none";
     confettiParticles = [];
-    step = 1;
-    showNote();
-});
 
+    // Reset game state
+    step = 0;
+    note.style.display = "none";
+    startGame.style.display = "block";
+});
+ 
 // Confetti
 function initConfetti() {
     confettiParticles = [];
