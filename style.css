@@ -29,7 +29,7 @@ body, html {
 
 /* Object positions and sizes */
 #yogaMat {
-    width: 8%;
+    width: 10%;
     height: auto;
     left: 76.2%;
     top: 55%;
@@ -120,3 +120,4 @@ body, html {
     pointer-events: none;
     display: none;
 }
+
