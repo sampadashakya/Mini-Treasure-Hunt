@@ -30,26 +30,26 @@ body, html {
 
 /* Yoga Mat */
 #yogaMat {
-    width: 8%;
-    height: 14%;
-    left: 77%;
-    top: 54%;
+    width: 8%;       /* keep width */
+    height: 16%;     /* slightly taller */
+    left: 77%;       /* same as before */
+    top: 54%;        /* same as before */
 }
 
 /* Dumbbell */
 #dumbbell {
-    width: 8%;
+    width: 8%;       /* slightly larger */
     height: auto;
-    left: 19%;
-    top: 50%;
+    left: 30%;       /* moved 1 inch right */
+    top: 27%;        /* moved 3 inches up */
 }
 
 /* Brownie */
 #brownie {
-    width: 13%;
+    width: 13%;      /* slightly bigger */
     height: auto;
-    left: 13%;
-    top: 57%;
+    left: -7%;       /* moved 2 inches left */
+    top: 24%;        /* moved 4 inches up */
 }
 
 /* Notes */
@@ -123,3 +123,4 @@ body, html {
     pointer-events: none;
     display: none;
 }
+
